@@ -1,9 +1,7 @@
-class Calculator:
+def add(a: float, b: float) -> float:
+    return a + b
 
-    def add(self, a, b):
-        return a + b
-
-    def divide(self, a, b):
-        if b == 0:
-            raise ValueError("Divider cannot be zero")
-        return a / b
+def divide(a: float, b: float) -> float:
+    if b == 0:
+        raise ValueError("Divider cannot be zero")
+    return a / b
