@@ -39,7 +39,6 @@ jobs:
           import xml.etree.ElementTree as ET
           tree = ET.parse('coverage.xml')
           root = tree.getroot()
-          # Cobertura-style coverage
           lines_valid = int(root.get('lines-valid', '0'))
           lines_covered = int(root.get('lines-covered', '0'))
           pct = (lines_covered / lines_valid) * 100 if lines_valid else 0
